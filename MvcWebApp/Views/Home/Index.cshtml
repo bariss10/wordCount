@@ -1,0 +1,36 @@
+﻿@using xmlCore.Models
+@model IEnumerable<xmlModel>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<body>
+    <table border="1">
+        <tr>
+            <th>NUMBER</th>
+            <th>TEXT</th>
+            <th>COUNT</th>
+            @{
+                int i = 0;
+            }
+
+            @foreach (xmlModel words in Model)
+            {
+            <tr>
+
+                @{
+                    i = i + 1;
+                }
+                <td>@i</td>
+                <td>@words.text</td>
+                <td>@words.count</td>
+
+            </tr>
+        }
+        </table>
+    </body>
+</html>
