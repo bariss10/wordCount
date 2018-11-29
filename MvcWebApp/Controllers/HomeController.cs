@@ -22,7 +22,6 @@ namespace MvcWebApp.Controllers
             {
                 //The file path must be changed!!!
                 doc.Load("C:\\Users/Lenovo/source/repos/WordCountConsoleApp/WordCountConsoleApp/bin/Debug/wordlist.xml");
-                //  https://localhost:44391/
                 
 
                 foreach (XmlNode node in doc.SelectNodes("/words/word"))
