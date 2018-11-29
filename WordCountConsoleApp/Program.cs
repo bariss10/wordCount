@@ -62,7 +62,7 @@ namespace WordCountConsoleApp
 
             }
 
-            using (XmlWriter writer = XmlWriter.Create("wordlist.xml"))
+            using (XmlWriter writer = XmlWriter.Create("D:\\wordlist.xml"))
             {
                 writer.WriteStartDocument();
                 writer.WriteStartElement("words");

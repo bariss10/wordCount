@@ -20,8 +20,7 @@ namespace MvcWebApp.Controllers
             XmlDocument doc = new XmlDocument();
             try
             {
-                //The file path must be changed!!!
-                doc.Load("C:\\Users/Lenovo/source/repos/WordCountConsoleApp/WordCountConsoleApp/bin/Debug/wordlist.xml");
+                doc.Load("D:\\wordlist.xml");
                 
 
                 foreach (XmlNode node in doc.SelectNodes("/words/word"))
